@@ -1,5 +1,7 @@
 exports.config = {
-    
+
+    services: ['phantomjs'],
+
     //
     // ==================
     // Specify Test Files
