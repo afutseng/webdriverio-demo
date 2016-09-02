@@ -19,4 +19,15 @@ describe('PIXNET 大首頁', () => {
         });
 
     });
+
+    it('焦點區塊圖片網址應為 pimg.tw 正式網域',function() {
+        var imgUrls =  browser
+            .url('https://www.pixnet.net/')
+            .getAttribute('#feature-box-ul li img', 'src');
+
+        imgUrls.map(function (url) {
+            assert(url.match(/pimg.tw\//));
+        });
+
+    });
 })
