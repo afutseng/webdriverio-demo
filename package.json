@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "selenium-standalone": "^5.7.2",
     "wdio-mocha-framework": "^0.4.0",
     "wdio-phantomjs-service": "^0.1.0",
     "wdio-selenium-standalone-service": "0.0.6",
