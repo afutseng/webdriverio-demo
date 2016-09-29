@@ -2,6 +2,9 @@
 
 > Modern Web 2016 議程分享：網站自動化測試 - 以 PIXNET 搜尋 & 美妝口碑大賞為例
 
+## 簡報
+https://speakerdeck.com/chph/modern-web-2016-yi-cheng-fen-xiang-wang-zhan-zi-dong-hua-ce-shi-yi-pixnet-sou-xun-and-mei-zhuang-kou-bei-da-shang-wei-li
+
 ## 安裝步驟
 1. 確定您的電腦已經安裝 Node.js 語言：https://nodejs.org/dist/v6.7.0/node-v6.7.0.pkg
 2. 打開「終端機」，輸入「npm」不會出現錯誤，執行結果類似：
