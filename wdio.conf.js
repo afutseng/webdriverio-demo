@@ -1,6 +1,7 @@
 exports.config = {
 
-    services: ['phantomjs'],
+    //services: ['phantomjs'],
+    services: ['selenium-standalone'],
     //services: ['phantomjs', 'selenium-standalone'],
 
     //
@@ -14,6 +15,9 @@ exports.config = {
     //
     specs: [
         './test/specs/**/*.js'
+        //'./test/specs/styleme-*.js'
+        //'./test/specs/screenshot-*.js'
+        //'./test/specs/homepage-*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -41,7 +45,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
+    capabilities: [/*{
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instance available you can make sure that not more than
         // 5 instance gets started at a time.
@@ -50,13 +54,13 @@ exports.config = {
         //browserName: 'firefox'
         browserName: 'phantomjs'
     }
-/*
-    , {
 
-        maxInstances: 5,
+    , */{
+
+        maxInstances: 1,
         browserName: 'chrome'
     }
-*/
+
 
     ],
     //
@@ -133,7 +137,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 20000
+        timeout: 50000
     },
     //
     // =====
